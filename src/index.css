@@ -55,16 +55,25 @@ li a{
   float: left;
   height: 400px;
   margin: 0 auto;
+  text-align: center;
 }
 .container-right{
   width: 50%;
   float: left;
   height: 400px;
   padding: 200px 0;
+  text-align: center;
 }
-button{
-  display: block;
-  margin: 0 auto; 
+.button{
+  margin: 20px auto;
+  background-color: #64bc5c;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  cursor: pointer;  
 }
 
 .category{
@@ -90,5 +99,6 @@ button{
   display: inline-block;
   text-align: center;
 }
+
 
 
