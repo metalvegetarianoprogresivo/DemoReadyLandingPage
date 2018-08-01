@@ -1,10 +1,11 @@
+/* General properties 
+********************/
 html {
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
-  /* border: solid; */
 }
 
 body{
@@ -13,6 +14,39 @@ body{
   font-family: sans-serif;
 }
 
+.content-wrap{
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+
+.container-left, .container-right{
+  width: 50%;
+  float: left;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container-right{
+  padding: 150px 0;
+}
+
+.button{
+  margin: 20px auto;
+  background-color: #64bc5c;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  cursor: pointer;  
+  text-transform: uppercase;
+}
+
+/* Call to action 
+*****************/
 nav{
   display: block;
   position: fixed;
@@ -44,37 +78,8 @@ li a{
   text-decoration: none;
 }
 
-.content-wrap{
-  margin: 0 auto;
-  padding: 60px 50px;
-  overflow: hidden;
-}
-
-.container-left{
-  width: 50%;
-  float: left;
-  height: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-.container-right{
-  width: 50%;
-  float: left;
-  height: 400px;
-  padding: 200px 0;
-  text-align: center;
-}
-.button{
-  margin: 20px auto;
-  background-color: #64bc5c;
-  color: white;
-  padding: 12px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 23px;
-  cursor: pointer;  
-}
+/* Main 
+********/
 
 .category{
   width: 150px;
@@ -91,6 +96,13 @@ li a{
   margin: 0 auto;
 }
 
+.pitch{
+  margin-top: 80px;
+}
+
+/* Footer 
+*********/
+
 .image-partner{
   width: 18%;
   height: 80px;
@@ -99,6 +111,3 @@ li a{
   display: inline-block;
   text-align: center;
 }
-
-
-
