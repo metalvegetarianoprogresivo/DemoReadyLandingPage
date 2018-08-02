@@ -1,5 +1,5 @@
 .navbar_intersys {
-    height: 70px;
+    height: 60px;
     background-color: white;
     font-family: Dosis, sans-serif;
     clear: both;
@@ -11,29 +11,28 @@
     color: #9e9e9e;
     font-size: 18px;
     font-weight: bold;
-    height: 70px;
-    padding: 10px 20px;
-    line-height: 50px;
+    height: 60px;
+    padding: 10px 40px;
+    line-height: 40px;
     margin:0;
   }
-  
+
   .navbar_intersys a i {
     color: #9e9e9e;
     line-height: 50px;
   }
 
-  .navbar_intersys li a:hover,
+.navbar_intersys li a:hover,
 .navbar_intersys li p:hover {
   background: #F4F6F9;
   color: #585A61;
 }
 
 .navbar_intersys li:hover a i{
-  color: #585A61;
+    color: #585A61;
 }
   
   .navbar_logo {
-    height: 35px;
+    height: 30px;
     margin: 1rem;
-    padding-top: 5px;
   }

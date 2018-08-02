@@ -11,8 +11,8 @@ class Headerdemo extends Component {
                     <NavItem href='/'>Back Home</NavItem>
                     <NavItem href='/'>Case Study</NavItem>
                     <NavItem href='/'>Live Demo</NavItem>
-                    <NavItem href='/'>Credits</NavItem>
                     <NavItem href='/'>Tech Stack</NavItem>
+                    <NavItem href='/'>Credits</NavItem>
                 </Navbar>
             </div>
         ]
