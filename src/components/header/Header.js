@@ -8,7 +8,7 @@ class Header extends Component {
         return [
             <div>
                 <Navbar brand={<img href="/" className="navbar_logo" src={logo} />} className='navbar_intersys' right>
-                    <NavItem href='/'><Icon>home</Icon></NavItem>
+                    <NavItem href='#call-to-action'><Icon>home</Icon></NavItem>
                     <NavItem href='#demos'>Demos</NavItem>
                     <NavItem href='#partner'>Partnership</NavItem>
                     <NavItem href='/'>About Us</NavItem>
