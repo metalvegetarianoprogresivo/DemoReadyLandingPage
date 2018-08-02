@@ -7,7 +7,7 @@ class CallToAction extends Component {
         return(
           <Section key='go-to-action' className='content-wrap'>
             <div className="container-left">
-                <iframe width="540" height="295" class="pitch" src="https://www.youtube.com/embed/SNoK5pyK73c?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                <iframe title='Lets Do Business' width="540" height="295" className="pitch" src="https://www.youtube.com/embed/SNoK5pyK73c?rel=0" frameBorder="0" allow="encrypted-media" allowFullScreen></iframe>
             </div>
             <div className="container-right">
               <div className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus, est ac aliquam faucibus, quam lacus viverra mi, sed porta tellus est id nisi. Cras velit diam, fermentum a nibh vel, dapibus pellentesque justo. Nunc malesuada risus eget purus interdum volutpat.</div>
