@@ -7,11 +7,11 @@ class Header extends Component {
     render() {
         return [
             <div>
-                <Navbar brand={<img href="/" className="navbar_logo" src={logo} />} className='navbar_intersys'>
+                <Navbar brand={<img href="/" className="navbar_logo" src={logo} />} className='navbar_intersys' right>
                     <NavItem href='/'><Icon>home</Icon></NavItem>
-                    <NavItem>Demos</NavItem>
-                    <NavItem>Partnership</NavItem>
-                    <NavItem>About Us</NavItem>
+                    <NavItem href='#demos'>Demos</NavItem>
+                    <NavItem href='#partner'>Partnership</NavItem>
+                    <NavItem href='/'>About Us</NavItem>
                 </Navbar>
             </div>
         ]
