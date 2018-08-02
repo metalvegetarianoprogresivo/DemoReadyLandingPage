@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import  {Button, Section } from 'react-materialize';
+import  {Button, Section} from 'react-materialize';
 import './CallToAction.css'
+
 class CallToAction extends Component {
     render() {
         return(
