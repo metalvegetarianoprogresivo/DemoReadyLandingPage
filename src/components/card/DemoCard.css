@@ -1,7 +1,7 @@
 .demo-card {
     background: #fff;
-    color: var(--blue) !important;
-    text-transform: uppercase
+    color: var(--grey);
+    text-transform: uppercase;
 }
 
 .card-action {
