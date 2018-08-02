@@ -4,8 +4,10 @@ import './hexagon.css';
 
 class Hexagon extends Component {
     render() {
+        const text = this.props.text;
         return (
-            <div className="hexagon">
+            <div className={`hexagon ${this.props.className || ''}`}
+            onMouseOver={ ()=> this.hover = true}>
                 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
                 version="1.0">
                     <defs xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +24,8 @@ class Hexagon extends Component {
                         </filter>
                     </defs>
                     <path
-                        id="hexagon__figure"
+                    className={`hexagon__figure
+                    ${this.hover? 'hover' : ''}`}
                         stroke="#245372"
                         strokeWidth="8"
                         fill="#49a7e4"
@@ -30,6 +33,13 @@ class Hexagon extends Component {
                         height="100"
                         d="M87.09526217584805,28.46081613799784 L50.00000431597698,6.921630847113185 L12.904743440231098,28.46081613799784 L12.904743440231098,71.53918068801742 L50.00000431597698,93.07836296302717 L87.09526217584805,71.53918068801742 L87.09526217584805,28.46081613799784 z"/>
                 </svg>
+
+            {
+                text &&
+                <h1 className="hexagon__text">
+                    {text}
+                </h1>
+            }
             </div>
         )
     }

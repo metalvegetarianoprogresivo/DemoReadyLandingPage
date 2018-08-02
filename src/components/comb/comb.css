@@ -1,0 +1,10 @@
+.comb{
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+}
+.comb__row {
+    clear: left;
+}
+.comb__row--even {
+    margin-left: 53px;
+}
