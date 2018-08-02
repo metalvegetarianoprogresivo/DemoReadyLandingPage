@@ -44,4 +44,4 @@ class CardBoard extends Component {
     }
 }
 
-export default CardBoard
+export default CardBoard;
