@@ -1,8 +1,9 @@
 
 import React, {Component} from 'react';
 import './App.css';
-import Header from './components/header/Header'
-import CallToAction from './components/calltoaction/CallToAction'
+import Header from './components/header/Header';
+import CallToAction from './components/calltoaction/CallToAction';
+import Partnership from './components/partners/Partnership';
 
 
 
@@ -12,8 +13,10 @@ class App extends Component {
       <div>
         <Header></Header>
         <CallToAction></CallToAction>
-      </div> 
-         
+        <footer id="partner">
+          <Partnership/>
+        </footer>
+      </div>
     );
   }
 }
