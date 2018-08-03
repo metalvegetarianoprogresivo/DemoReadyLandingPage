@@ -5,7 +5,7 @@ import './CallToAction.css'
 class CallToAction extends Component {
     render() {
         return(
-          <Section key='go-to-action' className='content-wrap'>
+          <Section id='call-to-action' className='content-wrap'>
             <div className="container-left">
                 <iframe title='Lets Do Business' width="540" height="295" className="pitch" src="https://www.youtube.com/embed/SNoK5pyK73c?rel=0" frameBorder="0" allow="encrypted-media" allowFullScreen></iframe>
             </div>
