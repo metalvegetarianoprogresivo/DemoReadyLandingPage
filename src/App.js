@@ -6,13 +6,25 @@ import Partnership from './components/partners/Partnership';
 
 import Services from "./components/containers/services/services"
 
+
+//todo: change const for json
+const categories = [
+  {name:"data"},
+  {name:"analytics"},
+  {name:"digital"},
+  {name:"search"},
+  {name:"agile"},
+  {name:"cloud"},
+  {name:"sourcing"}
+];
+
 class App extends Component {
   render() {
     return (
       <div>
         <Header></Header>
         <CallToAction></CallToAction>
-        <Services />
+        <Services categories={categories} />
         <footer id="partner">
           <Partnership/>
         </footer>

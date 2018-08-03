@@ -7,14 +7,15 @@ import Hexagon from "./../../hexagon/hexagon";
 
 class Services extends Component {
   render() {
+
+    const categories = this.props.categories.map(category => category.name);
+
     return (
       <div className="services z-depth-2">
         <Comb>
-          <Hexagon text="Digital"/>
-          <Hexagon text="BigData"/>
-          <Hexagon text="App Development"/>
-          <Hexagon text="Test Automation" className="odd"/>
-          <Hexagon text="Skye Search" className="odd"/>
+          {
+            categories.map((name,i) => <Hexagon key={name} text={name}/>)
+          }
         </Comb>
       </div>
     )
