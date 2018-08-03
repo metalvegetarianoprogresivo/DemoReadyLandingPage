@@ -1,0 +1,29 @@
+[
+  {
+    "name": "bigdata",
+    "description": "lorem ipsum",
+    "cardboard": [
+      {
+        "image": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
+        "title": "Demo Title",
+        "description": "I am a very simple card. I am good at containing small bits of information",
+        "linkTo": "#",
+        "linkText": "Link text"
+      },
+      {
+        "image": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
+        "title": "Demo Title",
+        "description": "I am a very simple card. I am good at containing small bits of information",
+        "linkTo": "#",
+        "linkText": "Link text"
+      },
+      {
+        "image": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
+        "title": "Demo Title",
+        "description": "I am a very simple card. I am good at containing small bits of information",
+        "linkTo": "#",
+        "linkText": "Link text"
+      }
+    ]
+  }
+]
