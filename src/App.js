@@ -9,8 +9,8 @@ import Services from "./components/containers/services/services"
 
 //todo: change const for json
 const categories = [
-  {name:"data"},
-  {name:"analytics"},
+  {name:"data",description:"lorem"},
+  {name:"analytics",description:"ipsum"},
   {name:"digital"},
   {name:"search"},
   {name:"agile"},
