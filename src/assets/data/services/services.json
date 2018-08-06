@@ -25,5 +25,23 @@
         "linkText": "Link text"
       }
     ]
+  },
+  {"name":"Analytics",
+    "description": "lorem ipsum1"
+  },
+  {"name":"Digital",
+    "description": "lorem ipsum2"
+  },
+  {"name":"Search",
+    "description": "lorem ipsum3"
+  },
+  {"name":"Agile",
+    "description": "lorem ipsum4"
+  },
+  {"name":"Cloud",
+    "description": "lorem ipsum5"
+  },
+  {"name":"Sourcing",
+    "description": "lorem ipsum6"
   }
 ]
