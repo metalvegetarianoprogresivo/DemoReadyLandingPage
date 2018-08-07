@@ -3,6 +3,7 @@
     background-color: white;
     font-family: Dosis, sans-serif;
     clear: both;
+    z-index: 1;
   }
   
   .navbar_intersys li a,
