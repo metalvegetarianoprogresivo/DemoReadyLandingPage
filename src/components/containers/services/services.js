@@ -12,29 +12,25 @@ class Services extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      name: null,
       description: null,
       cardboard: null
     }
   }
 
-  selectCategory = (name) => {
-    const description = this
+  selectCategory = (text) => {
+    const {description, name, cardboard} = this
       .props
       .data
-      .filter(category => category.name === name)
-      .map(category => category.description)
+      .find(category => category.name === text)
 
-    this.setState({description})
+    this.setState({name, cardboard, description})
   }
 
+  componentDidMount() {
+    const defaultCategory = this.props.data[0];
 
-  componentDidMount(){
-    const defaultCategory = this.props.data[0] ;
-
-    this.setState({
-      description: defaultCategory.description,
-      cardboard: defaultCategory.cardboard
-    })
+    this.setState({description: defaultCategory.description, cardboard: defaultCategory.cardboard})
 
   }
 
@@ -53,7 +49,7 @@ class Services extends Component {
           {categories.map((name, i) => <Hexagon key={name} selectCategory={this.selectCategory} text={name}/>)}
         </Comb>
         <CategoriesInfo info={this.state.description}/>
-        <Cardboard cardData={this.state.cardboard} />
+        <Cardboard cardData={this.state.cardboard}/>
       </div>
     )
   }
