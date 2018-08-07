@@ -1,33 +1,84 @@
 [
   {
     "name": "bigdata",
-    "description": "lorem ipsum",
+    "description": "Data is the raw material that powers modern organizations. Creating massive volumes of data is easy. However, consuming, storing, organizing and governing this data is more challenging than ever.\n\nIntersys can help you define your data strategy, architect and build your data solution or simply enhance your implementation process. Whether you need to modernize your data architecture, ingest and store massive quantities of data, enable data streaming use cases, implement MDM and Governance, or migrate and transform your data, Intersys can ease your journey.",
     "cardboard": [
       {
         "image": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
-        "title": "Demo Title",
-        "description": "I am a very simple card. I am good at containing small bits of information",
+        "title": "Big Data Storage and Compute",
+        "description": "The separation of Big Data Storage and Compute allows for better workload scalability, simplified planning, less data redundancy, and fewer wasted resources. Intersys has experience architecting, implementing, and performance tuning Cloud, On-Premise, and Hybrid Big Data solutions. Allow us to save you time and money by bringing our experience and learned industry lessons to each of our engagements.\n\nThe knowledge and experience Intersys brings to engagements will accelerate and improve the return on your data investments and ensure that your organization has the foundation for leveraging data as a competitive advantage.",
         "linkTo": "#",
-        "linkText": "Link text"
+        "linkText": "Learn more"
       },
       {
         "image": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
-        "title": "Demo Title",
-        "description": "I am a very simple card. I am good at containing small bits of information",
+        "title": "Data Ingestion Services",
+        "description": "The Big Data ecosystem provides many different options for the ingestion of batch and streaming data: Spark, Storm, Kafka, Kinesis, Sqoop, Flume, Logstash, Beats – the list goes on. Intersys can recommend the best data ingestion technology for your requirements or build data ingestion pipelines that enable access to the essential data your business needs.",
         "linkTo": "#",
-        "linkText": "Link text"
+        "linkText": "Learn more"
       },
       {
         "image": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
-        "title": "Demo Title",
-        "description": "I am a very simple card. I am good at containing small bits of information",
+        "title": "Data Lake and Data Warehousing",
+        "description": "Centralizing your data in a data lake or data warehouse can give your data consumers a single location for all their data needs. Also, your Data Science and Analytics professionals will have access to the raw data they require for modeling and predictions. Intersys has been designing and building relational Data Warehouses for over 20 years, and we’ve been leaders in implementing Data Lakes in our customers’ Big Data environments.",
         "linkTo": "#",
-        "linkText": "Link text"
+        "linkText": "Learn More About Data Lakes"
+      },
+      {
+        "image": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
+        "title": "Migration, Integration, and Virtualization",
+        "description": "ETL/ELT tools such as Informatica, DataStage, and SQL Server Integration Services (SSIS) remain core data migration and integration tools within the enterprise. Intersys has over two decades of experience in data migration and systems integration utilizing a broad range of tools and technologies. Allow us to simplify your integration and migration projects by bringing the expertise needed to get your data done right.",
+        "linkTo": "#",
+        "linkText": "Learn More"
+      },
+      {
+        "image": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
+        "title": "Master Data Management",
+        "description": "Your organization needs a single enterprise-wide view of your customers, accounts or products. Where can you find this data and how can it be used? Master Data Management tools can simplify complex data environments by reducing redundancy, eliminating incorrect data and standardizing data. Let Intersys be your trusted partner in collecting, matching, consolidating, cleansing and distributing data through a Master Data Management solution.",
+        "linkTo": "#",
+        "linkText": "Learn More"
+      },
+      {
+        "image": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
+        "title": "Data Governance/Quality",
+        "description": "Data-driven decision making requires trust. Data Governance encompasses the people, processes, and technology required to ensure data quality and integrity to build this trust. Intersys has a track record of helping organizations successfully and efficiently implement Data Governance and Data Quality practices. If your current Governance processes are broken, bureaucratic or non-existent, Intersys can help find the right balance of control without red-tape.",
+        "linkTo": "#",
+        "linkText": "Learn More"
       }
     ]
   },
   {"name":"Analytics",
-    "description": "lorem ipsum1"
+    "description": "Today’s economy is dominated by companies leveraging data for a competitive advantage. In fact, the inability to utilize available data can be the difference between an organization’s success and failure.\n\nData alone provides little value to businesses without effective tools and processes for answering questions, uncovering patterns, and making predictions.\n\nIntersys has a passion for transforming data into insights. From business intelligence to visual analytics, machine learning, and data science, Intersys has the talent and experience needed to ensure that insights from your data investments are realized. So throw away the status quo and let Intersys help your organization become a data-driven success story.",
+    "cardboard": [
+      {
+        "image": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
+        "title": "Data Science and Modeling",
+        "description": "Our Data Science team will help your organization not only better understand customer behaviors, but begin to predict outcomes. We’ll apply streaming analytics where appropriate to make recommendations in real-time that can improve those outcomes or prevent unwanted actions. Whether personalizing offers, preventing fraud, or optimizing manufacturing yield, our data science team will bring meaningful analytics that can scale.",
+        "linkTo": "#",
+        "linkText": "Learn More"
+      },
+      {
+        "image": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
+        "title": "Machine / Cognitive Learning",
+        "description": "Some Data can be overwhelming and too complex for even the most seasoned Data Scientist. In these scenarios, Machine Learning algorithms can “think” like a person to learn from data and predict outcomes. Intersys has experience across a wide range of machine learning platforms including Microsoft Azure Machine Learning, Amazon Machine Learning, scikit-learn, R, MATLAB, Splunk and many others. When traditional programming has reached its limits, Intersys can help your organization improve outcomes through Machine Learning.",
+        "linkTo": "#",
+        "linkText": "Learn More"
+      },
+      {
+        "image": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
+        "title": "Visual Analytics",
+        "description": "A picture is worth a thousand words – or millions or even billions. Visual Analytics is the use of visual representations to understand abstract data through speed of comprehension and understanding. Common visual analytics techniques include Treemaps, Heat Maps, and Graph Drawing.\n\nIf your organization needs help getting to the right answer faster though visualization of complex and voluminous data, our experts are ready to help.",
+        "linkTo": "#",
+        "linkText": "Learn More"
+      },
+      {
+        "image": "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
+        "title": "Business Intelligence",
+        "description": "Business Intelligence platforms are continuously improving allowing BI professionals and end users to create sophisticated reports, dashboards, and ad-hoc analytics through increasingly intuitive interfaces. Intersys has over 20 years of experience in the business intelligence field across dozens of different platforms. Our BI Architects, designers and developers can quickly interpret business need and create BI solutions that provide the data that decision makers need.",
+        "linkTo": "#",
+        "linkText": "Learn More"
+      }
+    ]
   },
   {"name":"Digital",
     "description": "lorem ipsum2"
