@@ -10,7 +10,7 @@ class Router extends Component{
           <BrowserRouter>
             <Switch>
               <Route exact path='/' component={App} />
-              <Route path='/demo-page/:name' component={DemoPage} />
+              <Route path='/demo-page/:demoId' component={DemoPage} />
             </Switch>
           </BrowserRouter>
         );
