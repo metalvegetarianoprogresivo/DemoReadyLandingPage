@@ -3,7 +3,7 @@ import HeaderDemo from '../../components/headerDemo/HeaderDemo'
 import VideoDemo from '../../components/VideoDemo/VideoDemo'
 import StudyCase from '../../components/StudyCase/StudyCase'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HeaderDemoS from '../../components/headerDemoS/HeaderDemoS'
+
 import './DemoPage.css';
 
 class DemoPage extends Component {
