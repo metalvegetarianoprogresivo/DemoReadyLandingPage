@@ -26,10 +26,10 @@ class CardBoard extends Component {
         _columns.push(col);
         i++;
       } else {
-        i = 0;
         board.push(
           <Row key={row++}>{_columns.slice(0)}</Row>
         );
+        i = 1;
         _columns = [];
         _columns.push(col);
       }
