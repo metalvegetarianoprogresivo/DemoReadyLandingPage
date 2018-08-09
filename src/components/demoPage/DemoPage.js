@@ -5,14 +5,14 @@ import StudyCase from '../../components/StudyCase/StudyCase'
 import Credits from '../../components/credits/Credits'
 import TechStack from '../../components/techStack/TechStack'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+import SideNav from '../sidenav/sidenav.js'
 import './DemoPage.css';
 
 class DemoPage extends Component {
     render() {
         // TO-DO src should be rendered from props
         return [
-            <div class="container">
+            <div>
                 <HeaderDemo></HeaderDemo>
                 <Switch>
                     <Route path="/demo-page/:categoryId/:demoId/case" component={StudyCase} />
