@@ -27,31 +27,25 @@ class Services extends Component {
   }
 
   componentDidMount() {
-    const {name,description,cardboard} = this.props.data[0];
+    const {name, description, cardboard} = this.props.data[0];
 
-    this.setState({
-      name,
-      description,
-      cardboard})
+    this.setState({name, description, cardboard})
   }
 
   render() {
     const categories = this
       .props
       .data
-      .map(category => ({
-        name: category.name,
-        info: category.info
-      }));
+      .map(category => ({name: category.name, info: category.info}));
 
     return (
-      <div className="services">
-        <Categories data={this.props.data} selectCategory={this.selectCategory}/>
-        <CategoriesInfo
-        description={this.state.description}
-        name={this.state.name}/>
+      <React.Fragment>
+        <div className="services">
+          <Categories data={this.props.data} selectCategory={this.selectCategory}/>
+          <CategoriesInfo description={this.state.description} name={this.state.name}/>
+        </div>
         <Cardboard cardData={this.state.cardboard}/>
-      </div>
+      </React.Fragment>
     )
   }
 }
