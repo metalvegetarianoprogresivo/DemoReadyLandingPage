@@ -2,10 +2,9 @@ import React, {Component} from 'react'
 
 import "./services.css";
 
-import Comb from "./../../comb/comb";
-import Hexagon from "./../../hexagon/hexagon";
 import Cardboard from "./../../card/CardBoard";
-import CategoriesInfo from "./../../categories-info/categories-info";
+import Categories from "./../../categories/categories";
+import CategoriesInfo from "./../../categoriesInfo/categoriesInfo";
 
 class Services extends Component {
 
@@ -28,27 +27,29 @@ class Services extends Component {
   }
 
   componentDidMount() {
-    const defaultCategory = this.props.data[0];
+    const {name,description,cardboard} = this.props.data[0];
 
-    this.setState({description: defaultCategory.description, cardboard: defaultCategory.cardboard})
-
+    this.setState({
+      name,
+      description,
+      cardboard})
   }
 
   render() {
-
-    const data = this.props.data;
-
     const categories = this
       .props
       .data
-      .map(category => category.name);
+      .map(category => ({
+        name: category.name,
+        info: category.info
+      }));
 
     return (
-      <div className="services z-depth-2">
-        <Comb>
-          {categories.map((name, i) => <Hexagon key={name} selectCategory={this.selectCategory} text={name}/>)}
-        </Comb>
-        <CategoriesInfo info={this.state.description}/>
+      <div className="services">
+        <Categories data={this.props.data} selectCategory={this.selectCategory}/>
+        <CategoriesInfo
+        description={this.state.description}
+        name={this.state.name}/>
         <Cardboard cardData={this.state.cardboard}/>
       </div>
     )
