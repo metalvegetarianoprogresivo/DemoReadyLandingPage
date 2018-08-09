@@ -10,9 +10,11 @@
 }
 
 .categories__single-category {
-    width: 100%;
+    width: 180px;
+    height: 180px;
     padding: 20px;
     color: var(--underline-black);
+    border-radius: 50%;
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
