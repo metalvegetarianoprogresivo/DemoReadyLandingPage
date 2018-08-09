@@ -11,7 +11,7 @@ class Sidenav extends Component {
                 trigger={<Button><Icon>menu</Icon></Button>}
                 options={{ closeOnClick: true }}
                 >
-                <SideNavItem href='#' header>Categories</SideNavItem>
+                <SideNavItem href='#' header className='sidenav-header'>Categories</SideNavItem>
                 <SideNavItem divider />
                 <Collapsible accordion>
                     <CollapsibleItem header='Digital'>
