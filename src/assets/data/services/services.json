@@ -10,7 +10,7 @@
           "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg",
         "title": "Big Data Storage and Compute",
         "description": "The separation of Big Data Storage and Compute allows for better workload scalability, simplified planning, less data redundancy, and fewer wasted resources. Intersys has experience architecting, implementing, and performance tuning Cloud, On-Premise, and Hybrid Big Data solutions. Allow us to save you time and money by bringing our experience and learned industry lessons to each of our engagements.\n\nThe knowledge and experience Intersys brings to engagements will accelerate and improve the return on your data investments and ensure that your organization has the foundation for leveraging data as a competitive advantage.",
-        "linkTo": "/demo-page/big-data/data",
+        "linkTo": "/demo-page/big-data/storage-and-compute",
         "linkText": "Learn more"
       },
       {

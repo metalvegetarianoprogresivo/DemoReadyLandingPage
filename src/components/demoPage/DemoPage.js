@@ -6,20 +6,58 @@ import Credits from '../../components/credits/Credits'
 import TechStack from '../../components/techStack/TechStack'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import SideNav from '../sidenav/sidenav.js'
+import { getDemosByCategory, 
+         getLocation,
+         getDemoById,
+         getUrl } from '../../../src/utils.js'
+
 import './DemoPage.css';
 
 class DemoPage extends Component {
+
+    getLocationKeywords = () => {
+        let locationKeywords = getLocation();
+
+        return locationKeywords
+    }
+    
+    constructor(props) {
+        super(props)
+
+        let dataLocation = this.getLocationKeywords()
+        let id = dataLocation[3]
+        let category = dataLocation[2]
+
+        let demoData = getDemoById(category, id)
+        console.log(demoData)
+        let url = getUrl()
+
+        this.state = {
+            credits : demoData.content.credits,
+            techStack : demoData.content.techStack,
+            demo : demoData.content.demo,
+            studyCase : demoData.content.studyCase,
+            id : demoData.id,
+            name : demoData.name
+        }
+
+        this.getLocationKeywords = this.getLocationKeywords.bind(this);
+    }
+
+    componentDidMount() {
+        
+    }
+
     render() {
-        // TO-DO src should be rendered from props
         return [
             <div>
                 <HeaderDemo></HeaderDemo>
-                <Switch>
+                {/* <Switch>
                     <Route path="/demo-page/:categoryId/:demoId/case" component={StudyCase} />
                     <Route path ="/demo-page/:categoryId/:demoId/demo" component = {VideoDemo} />
                     <Route path ="/demo-page/:categoryId/:demoId/credits" component = {Credits} />
                     <Route path ="/demo-page/:categoryId/:demoId/stack" component = {TechStack} />
-                </Switch>
+                </Switch> */}
             </div>
         ]
     }
