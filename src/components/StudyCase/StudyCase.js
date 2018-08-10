@@ -7,7 +7,6 @@ class StudyCase extends Component {
     render() {
         return (
             <div>
-                <DemoPage></DemoPage>
                 <Parallax imageSrc="http://materializecss.com/images/parallax1.jpg"/>
                 <div className="section white">
                     <div className="row container">

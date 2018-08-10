@@ -14,12 +14,12 @@ class Router extends Component{
           <BrowserRouter>
             <Switch>
               <Route exact path='/' component={App} />
-              <Route exact path='/demo-page/:category/:demoId' component={DemoPage} />
-              <Route exact path='/demo-page/:category/:demoId/demo' component={VideoDemo} />
-              <Route exact path='/demo-page/:category/:demoId/case' component={StudyCase} />
-              <Route exact path='/demo-page/:category/:demoId/credits' component={StudyCase} />
-              <Route exact path='/demo-page/:category/:demoId/tech' component={TechStack} />
-              {/* <Route exact path='/demo-page/:pokemon' component={VideoDemo} /> */}
+              <DemoPage>
+                <Route path='/demo-page/:category/:demoId/demo' component={VideoDemo} />
+                <Route path='/demo-page/:category/:demoId/case' component={StudyCase} />
+                <Route path='/demo-page/:category/:demoId/credits' component={Credits} />
+                <Route path='/demo-page/:category/:demoId/tech' component={TechStack} />
+              </DemoPage>
             </Switch>
           </BrowserRouter>
         );
