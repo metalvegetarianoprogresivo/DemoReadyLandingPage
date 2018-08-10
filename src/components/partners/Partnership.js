@@ -1,34 +1,45 @@
-import React, { Component } from 'react';
-import {Section, Row, Col} from 'react-materialize';
+import React from 'react'
+
+import aws from "./../../assets/images/logo_aws.jpg";
+import elastic from "./../../assets/images/logo_elastic.jpg";
+import microsoft from "./../../assets/images/logo_microsoft.png";
+import cloudera from "./../../assets/images/logo_cloudera.jpg";
+import hortonworks from "./../../assets/images/logo_hortonworks.jpg";
+import mapr from "./../../assets/images/logo_mapr.jpg";
+
 import './Partnership.css'
 
-class Partnership extends Component {
-    render(){
-        return(
-            <Section>
-                <Row>
-                    <Col s={1} m={2}>
-                    <img className="image-partner"  src='https://www.intersysconsulting.com/wp-content/uploads/2016/07/elastic-logo.jpg' alt='Elasctic'/>
-                    </Col>
-                    <Col s={1} m={2}>
-                    <img className="image-partner"  src='https://www.intersysconsulting.com/wp-content/uploads/2016/08/microsoft-logo-300x64.png' alt='Microsoft'/>
-                    </Col>
-                    <Col s={1} m={2}>
-                    <img className="image-partner"  src='https://www.intersysconsulting.com/wp-content/uploads/2016/07/amazon-logo.jpg' alt='Amazon'/>
-                    </Col>
-                    <Col s={1} m={2}>
-                    <img className="image-partner"  src='https://www.intersysconsulting.com/wp-content/uploads/2016/07/cloudera-logo.jpg' alt='Cloudera'/>
-                    </Col>
-                    <Col s={1} m={2}>
-                    <img className="image-partner"  src='https://www.intersysconsulting.com/wp-content/uploads/2016/07/horton-logo.jpg ' alt='Horton'/>
-                    </Col>
-                    <Col s={1} m={2}>
-                    <img className="image-partner"  src='https://www.intersysconsulting.com/wp-content/uploads/2016/07/mapr-logo.jpg' alt='Mapr'/>
-                    </Col>
-                </Row>
-            </Section>
-        );
-    }
+export default() => {
+    const partners = [
+        {
+            name: "Amazon Web Services",
+            img: aws
+        }, {
+            name: "Elastic",
+            img: elastic
+        }, {
+            name: "Gold Microsoft Partner ",
+            img: microsoft
+        }, {
+            name: "Cloudera",
+            img: cloudera
+        }, {
+            name: "Horton Works",
+            img: hortonworks
+        }, {
+            name: "Mapr",
+            img: mapr
+        }
+    ];
+    return (
+        <div className="partners">
+            {partners.map(partner => (
+                <div>
+                    <img className="partners__logo"
+                    src={partner.img} alt={partner.name}/>
+                </div>
+            ))
 }
-
-export default Partnership;
+        </div>
+    )
+}

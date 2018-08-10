@@ -1,7 +1,0 @@
-.comb{
-    display:grid;
-    grid-template-columns: 30% 30% 30%;
-}
-.comb__row {
-    clear: left;
-}
