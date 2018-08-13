@@ -39,7 +39,7 @@ class HeaderDemo extends Component {
                     <NavItem href='/'><Icon>home</Icon></NavItem>
                     <NavItem href={`${currentPath.pathname}`}></NavItem>
                     <NavItem href={'/' + this.cleanUrl() + '/case'}>Case</NavItem>
-                    <NavItem href={'/' + this.cleanUrl() + '/demo'} src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0">Demo</NavItem>
+                    <NavItem href={'/' + this.cleanUrl() + '/demo'} >Demo</NavItem>
                     <NavItem href={'/' + this.cleanUrl() + '/credits'}>Credits</NavItem>
                     <NavItem href={'/' + this.cleanUrl() + '/tech'}>Tech Stack</NavItem>
                 </Navbar>           
