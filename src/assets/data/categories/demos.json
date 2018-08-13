@@ -14,7 +14,7 @@
                 }    
             },
             {
-                "id" : "data-ingestion-services",
+                "id" : "ingestion-services",
                 "name" : "Data Ingestion Services",
                 "content" : {
                     "studyCase" : "",
@@ -24,7 +24,7 @@
                 }    
             },
             {
-                "id" : "data-lake-and-data-warehousing",
+                "id" : "warehousing",
                 "name" : "Data Lake and Data Warehousing",
                 "content" : {
                     "studyCase" : "",
@@ -34,7 +34,7 @@
                 }    
             },
             {
-                "id" : "migration-integreation-and-virtualization",
+                "id" : "migration-integration",
                 "name" : "Migration, Integration, and Virtualization",
                 "content" : {
                     "studyCase" : "",
@@ -44,7 +44,7 @@
                 }    
             },
             {
-                "id" : "master-data-management",
+                "id" : "data-management",
                 "name" : "Master Data Management",
                 "content" : {
                     "studyCase" : "",
@@ -54,7 +54,7 @@
                 }    
             },
             {
-                "id" : "data-governance-quality",
+                "id" : "data-governance",
                 "name" : "Data Governance/Quality",
                 "content" : {
                     "studyCase" : "",
@@ -70,7 +70,7 @@
         "id" : "analytics",
         "demos" : [
             {
-                "id" : "data-science-and-modeling",
+                "id" : "data-science",
                 "name" : "Data Science and Modeling",
                 "content" : {
                     "studyCase" : "",
@@ -80,7 +80,7 @@
                 }    
             },
             {
-                "id" : "machine-cognitive-learning",
+                "id" : "cognitive-learning",
                 "name" : "Machine / Cognitive Learning",
                 "content" : {
                     "studyCase" : "",
@@ -90,7 +90,7 @@
                 }    
             },
             {
-                "id" : "visual-analytics",
+                "id" : "visual",
                 "name" : "Visual Analytics",
                 "content" : {
                     "studyCase" : "",
@@ -126,7 +126,7 @@
                 }    
             },
             {
-                "id" : "native-hybrid-mobile-solutions",
+                "id" : "native-hybrid-mobile",
                 "name" : "Native / Hybrid Mobile Solutions",
                 "content" : {
                     "studyCase" : "",
@@ -175,7 +175,7 @@
                 }    
             },
             {
-                "id" : "application-integration",
+                "id" : "app-integration",
                 "name" : "Application Integration",
                 "content" : {
                     "studyCase" : "",
@@ -221,7 +221,7 @@
                 }    
             },
             {
-                "id" : "natural-lenguage-processing",
+                "id" : "natural-language",
                 "name" : "Natural Language Processing",
                 "content" : {
                     "studyCase" : "",
@@ -241,7 +241,7 @@
                 }    
             },
             {
-                "id" : "operations-and-security-monitoring",
+                "id" : "operations-security",
                 "name" : "Operations and Security Monitoring",
                 "content" : {
                     "studyCase" : "",
@@ -257,7 +257,7 @@
         "id" : "agile",
         "demos" : [
             {
-                "id" : "transformation-and-coaching",
+                "id" : "coaching",
                 "name" : "Transformation and Coaching",
                 "content" : {
                     "studyCase" : "",
@@ -267,7 +267,7 @@
                 }    
             },
             {
-                "id" : "continuous-integration-continuous-delivery",
+                "id" : "ci-cd",
                 "name" : "Continuous Integration / Continuous Delivery",
                 "content" : {
                     "studyCase" : "",
@@ -324,7 +324,7 @@
                 }    
             },
             {
-                "id" : "implementation-and-migration",
+                "id" : "implementation",
                 "name" : "Implementation and Migration",
                 "content" : {
                     "studyCase" : "",
@@ -334,7 +334,7 @@
                 }    
             },
             {
-                "id" : "resource-and-service-optimization",
+                "id" : "service-optimization",
                 "name" : "Resource and Service Optimization",
                 "content" : {
                     "studyCase" : "",
@@ -360,7 +360,7 @@
         "id" : "sourcing",
         "demos" : [
             {
-                "id" : "rapid-feautre-team-deployment",
+                "id" : "team-deployment",
                 "name" : "Rapid Feature Team Deployment",
                 "content" : {
                     "studyCase" : "",
@@ -370,7 +370,7 @@
                 }    
             },
             {
-                "id" : "contract-contract-to-hire",
+                "id" : "contract-to-hire",
                 "name" : "Contract / Contract-to-Hire",
                 "content" : {
                     "studyCase" : "",
@@ -380,7 +380,7 @@
                 }    
             },
             {
-                "id" : "it-sourcing-recruiting-services",
+                "id" : "it-sourcing",
                 "name" : "IT Sourcing / Recruiting Services",
                 "content" : {
                     "studyCase" : "",
