@@ -19,11 +19,9 @@ class DemoPage extends Component {
         super(props)
 
         let dataLocation = this.getLocationKeywords()
-        let id = dataLocation[3]
-        let category = dataLocation[2]
-
+        let id = dataLocation[2]
+        let category = dataLocation[1]
         let demoData = getDemoById(category, id)
-        console.log(demoData)
         let url = getUrl()
 
         this.state = {
@@ -46,7 +44,6 @@ class DemoPage extends Component {
         return [
             <div>
                 <HeaderDemo></HeaderDemo>
-                {this.props.children}
             </div>
         ]
     }
