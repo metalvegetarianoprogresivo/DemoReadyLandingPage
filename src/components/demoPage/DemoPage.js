@@ -25,11 +25,9 @@ class DemoPage extends Component {
         super(props)
 
         let dataLocation = this.getLocationKeywords()
-        let id = dataLocation[3]
-        let category = dataLocation[2]
-
+        let id = dataLocation[2]
+        let category = dataLocation[1]
         let demoData = getDemoById(category, id)
-        console.log(demoData)
         let url = getUrl()
 
         this.state = {
@@ -52,12 +50,6 @@ class DemoPage extends Component {
         return [
             <div>
                 <HeaderDemo></HeaderDemo>
-                {/* <Switch>
-                    <Route path="/demo-page/:categoryId/:demoId/case" component={StudyCase} />
-                    <Route path ="/demo-page/:categoryId/:demoId/demo" component = {VideoDemo} />
-                    <Route path ="/demo-page/:categoryId/:demoId/credits" component = {Credits} />
-                    <Route path ="/demo-page/:categoryId/:demoId/stack" component = {TechStack} />
-                </Switch> */}
             </div>
         ]
     }
