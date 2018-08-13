@@ -13,7 +13,6 @@ class Router extends Component{
   constructor(props) {
     super(props)
   }
-
     render() {
         return(
           <BrowserRouter>
@@ -25,6 +24,7 @@ class Router extends Component{
                 <Route path='/demo-page/:category/:demoId/credits' component={Credits} />
                 <Route path='/demo-page/:category/:demoId/tech' component={TechStack} />
               </DemoPage>
+>>>>>>> dev
             </Switch>
           </BrowserRouter>
         );

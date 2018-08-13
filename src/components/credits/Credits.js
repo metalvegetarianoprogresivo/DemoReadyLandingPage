@@ -10,7 +10,7 @@ class Credits extends Component {
                     <img src='https://i0.wp.com/www.sopitas.com/wp-content/uploads/2015/12/giphy17.gif' alt='credits' />
                 </div>
             </div>
-            
+
         );
     }
 }
