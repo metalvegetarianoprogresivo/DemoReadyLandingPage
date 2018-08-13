@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import HeaderDemo from '../../components/headerDemo/HeaderDemo'
 import './VideoDemo.css';
 import DemoPage from '../demoPage/DemoPage';
 //import React, {Component} from 'react';

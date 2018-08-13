@@ -40,7 +40,7 @@ class Services extends Component {
 
     return (
       <React.Fragment>
-        <div className="services">
+        <div id='demos' className="services">
           <Categories data={this.props.data} selectCategory={this.selectCategory}/>
           <CategoriesInfo description={this.state.description} name={this.state.name}/>
         </div>

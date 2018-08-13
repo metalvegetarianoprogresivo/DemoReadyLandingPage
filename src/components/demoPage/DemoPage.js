@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
 import HeaderDemo from '../../components/headerDemo/HeaderDemo'
-import VideoDemo from '../../components/VideoDemo/VideoDemo'
-import StudyCase from '../../components/StudyCase/StudyCase'
-import Credits from '../../components/credits/Credits'
-import TechStack from '../../components/techStack/TechStack'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import SideNav from '../sidenav/sidenav.js'
 import { getDemosByCategory, 
          getLocation,
          getDemoById,
@@ -50,6 +44,7 @@ class DemoPage extends Component {
         return [
             <div>
                 <HeaderDemo></HeaderDemo>
+                {this.props.children}
             </div>
         ]
     }
