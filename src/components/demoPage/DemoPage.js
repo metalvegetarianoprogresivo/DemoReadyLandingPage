@@ -11,7 +11,6 @@ import { getDemosByCategory,
          getDemoById,
          getUrl } from '../../../src/utils.js'
 
->>>>>>> 8579721cccf941fd2113a7880e260b0742708a73
 import './DemoPage.css';
 
 class DemoPage extends Component {
@@ -53,29 +52,12 @@ class DemoPage extends Component {
         return [
             <div>
                 <HeaderDemo></HeaderDemo>
-<<<<<<< HEAD
-                {/* <SideNav></SideNav> */}
-                <div>
-                    <Switch>
-                        <Route exact path="/" component={VideoDemo} />
-                        <Route exact path="/case" component={StudyCase} />
-                        <Route exact path = "/demo" component = {VideoDemo} />
-                    </Switch>
-                </div>
-||||||| merged common ancestors
-                <Switch>
-                    <Route exact path="/" component={VideoDemo} />
-                    <Route exact path="/case" component={StudyCase} />
-                    <Route exact path = "/demo" component = {VideoDemo} />
-                </Switch>
-=======
                 {/* <Switch>
                     <Route path="/demo-page/:categoryId/:demoId/case" component={StudyCase} />
                     <Route path ="/demo-page/:categoryId/:demoId/demo" component = {VideoDemo} />
                     <Route path ="/demo-page/:categoryId/:demoId/credits" component = {Credits} />
                     <Route path ="/demo-page/:categoryId/:demoId/stack" component = {TechStack} />
                 </Switch> */}
->>>>>>> 8579721cccf941fd2113a7880e260b0742708a73
             </div>
         ]
     }
