@@ -1,13 +1,8 @@
 .demo-card {
     background: #fff;
     color: var(--grey);
-    text-transform: uppercase;
 }
-
-.card-action {
-    color: #565a60;
-}
-
-div.card-action {
-    color: #565a60; 
+.card-action a {
+    color: var(--green) !important;
+    font-weight: bold;
 }
