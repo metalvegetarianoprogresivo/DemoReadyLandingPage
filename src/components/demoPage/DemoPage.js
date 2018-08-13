@@ -44,6 +44,7 @@ class DemoPage extends Component {
         return [
             <div>
                 <HeaderDemo></HeaderDemo>
+                {this.props.children}
             </div>
         ]
     }

@@ -19,11 +19,12 @@ class Router extends Component{
           <BrowserRouter>
             <Switch>
               <Route exact path='/' component={App} />
-              <Route exact path='/demo-page/:category/:demoId' render={props => (<div><DemoPage/></div>)}/>}/>
-              <Route exact path='/demo-page/:category/:demoId/demo' render={props => (<div><HeaderDemo/><VideoDemo/></div>)}/>} />
-              <Route exact path='/demo-page/:category/:demoId/case' component={StudyCase} />
-              <Route exact path='/demo-page/:category/:demoId/credits' component={Credits} />
-              <Route exact path='/demo-page/:category/:demoId/tech' component={TechStack} />
+              <DemoPage>
+                <Route path='/demo-page/:category/:demoId/demo' component={VideoDemo} />
+                <Route path='/demo-page/:category/:demoId/case' component={StudyCase} />
+                <Route path='/demo-page/:category/:demoId/credits' component={Credits} />
+                <Route path='/demo-page/:category/:demoId/tech' component={TechStack} />
+              </DemoPage>
             </Switch>
           </BrowserRouter>
         );
