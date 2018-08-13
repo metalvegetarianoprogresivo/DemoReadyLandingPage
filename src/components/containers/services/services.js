@@ -33,10 +33,7 @@ class Services extends Component {
   }
 
   render() {
-    const categories = this
-      .props
-      .data
-      .map(category => ({name: category.name, info: category.info}));
+    // const categories = this.props.data.map(category => ({name: category.name, info: category.info}));
 
     return (
       <React.Fragment>

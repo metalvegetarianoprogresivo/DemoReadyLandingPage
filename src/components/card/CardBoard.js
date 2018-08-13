@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {Row, Col, Container} from 'react-materialize';
+import React from 'react';
+import { Row, Col, Container } from 'react-materialize';
 import DemoCard from './DemoCard'
 import './CardBoard.css'
 
@@ -7,17 +7,17 @@ const colNumber = 3;
 const m = 12 / colNumber;
 const s = 1;
 
-class CardBoard extends Component {
-
-  createBoard = (data) => {
+ let createBoard = function(data) {
     var i = 0;
     var board = [];
-    var columns = data.map(cardData => <Col s={s} m={m}><DemoCard
-      image={cardData.image}
-      title={cardData.title}
-      description={cardData.description}
-      linkTo={cardData.linkTo}
-      linkText={cardData.linkText}/></Col>);
+    var columns = data.map((cardData, index) => <Col key={index} s={s} m={m}>
+      <DemoCard
+        image={cardData.image}
+        title={cardData.title}
+        description={cardData.description}
+        linkTo={cardData.linkTo}
+        linkText={cardData.linkText} />
+    </Col>);
     var _columns = [];
     var row = 1;
 
@@ -42,15 +42,12 @@ class CardBoard extends Component {
     return board;
   }
 
-  render() {
-    return (
+  const cardBoard = (props) => (
       <div className='cardboard'>
         <Container >
-          {this.props.cardData && this.createBoard(this.props.cardData)}
+          {props.cardData && createBoard(props.cardData)}
         </Container>
       </div>
     );
-  }
-}
 
-export default CardBoard;
+export default cardBoard;

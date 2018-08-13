@@ -34,7 +34,7 @@ export default() => {
     return (
         <div className="partners">
             {partners.map(partner => (
-                <div>
+                <div key={partner.name}>
                     <img className="partners__logo"
                     src={partner.img} alt={partner.name}/>
                 </div>

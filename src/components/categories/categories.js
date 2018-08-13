@@ -8,7 +8,7 @@ export default (props) => {
       {
         props.data.map(category => {
           return (
-          <div className="categories__single-category"
+          <div key={category.name} className="categories__single-category"
           onClick={()=> props.selectCategory(category.name)}>
             <img
             className="categories__image"
