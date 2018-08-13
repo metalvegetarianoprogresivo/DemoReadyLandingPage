@@ -6,8 +6,7 @@ class TechStack extends Component {
     render(){
         return(
             <div>
-                <DemoPage></DemoPage>
-                <img src='https://tech.foodora.com/wp-content/uploads/sites/11/2018/01/stack.png' />
+                <img src='https://tech.foodora.com/wp-content/uploads/sites/11/2018/01/stack.png' className='center' />
             </div>
         );
     }

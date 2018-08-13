@@ -7,7 +7,8 @@ export const getLocation = () => {
     let location = window.location
     let words = location.pathname.split("/")   
 
-    return words
+    const path = words.filter(word => word.length > 0)
+    return path
 }
 
 /**
@@ -58,7 +59,6 @@ export const matchParamUrl = () => {
 export const getCategories = () => {
     let categories = []
 
-    console.log(data)
     for(let i = 0; i < data.length; i++) {
         categories.push(data[i].category)
     }
@@ -72,7 +72,7 @@ export const getCategories = () => {
 export const getDemosByCategory = (category) => {
     let demosByCategory = []
     
-    for(let i = 0 ; i < data.length; i++) {   
+    for(let i = 0 ; i < data.length; i++) { 
         if (data[i].id === category) { 
             demosByCategory.push(data[i].demos) 
         }
@@ -86,14 +86,11 @@ export const getDemosByCategory = (category) => {
  */
 export const getDemoById = (category, id) => {
     let demos = getDemosByCategory(category)
-    //console.log(demos)
     let demoById = {}
     
     for (let i = 0; i < demos[0].length; i++)  {
-        console.log(demos[0][i])
         if(demos[0][i].id === id) { demoById = demos[0][i] }
     }
-    //console.log(demoById)
 
     return demoById
 }
