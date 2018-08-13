@@ -15,7 +15,6 @@ class Router extends Component{
   }
 
     render() {
-      console.log(this)
         return(
           <BrowserRouter>
             <Switch>
@@ -23,10 +22,8 @@ class Router extends Component{
               <Route exact path='/demo-page/:category/:demoId' render={props => (<div><DemoPage/></div>)}/>}/>
               <Route exact path='/demo-page/:category/:demoId/demo' render={props => (<div><HeaderDemo/><VideoDemo/></div>)}/>} />
               <Route exact path='/demo-page/:category/:demoId/case' component={StudyCase} />
-              <Route exact path='/demo-page/:category/:demoId/credits' component={StudyCase} />
+              <Route exact path='/demo-page/:category/:demoId/credits' component={Credits} />
               <Route exact path='/demo-page/:category/:demoId/tech' component={TechStack} />
-            
-              <Route exact path='/demo-page/:pokemon' render={(props) => <VideoDemo {...props} isAuthed={true} />} />
             </Switch>
           </BrowserRouter>
         );
