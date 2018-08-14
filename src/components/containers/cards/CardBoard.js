@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-materialize';
-import DemoCard from './DemoCard'
+import DemoCard from './../../card/DemoCard'
 import './CardBoard.css'
 
 const colNumber = 3;

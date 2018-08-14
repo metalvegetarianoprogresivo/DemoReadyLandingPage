@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 import "./services.css";
 
-import Cardboard from "./../../card/CardBoard";
+import Cardboard from "./../cards/CardBoard";
 import Categories from "./../../categories/categories";
 import CategoriesInfo from "./../../categoriesInfo/categoriesInfo";
 
