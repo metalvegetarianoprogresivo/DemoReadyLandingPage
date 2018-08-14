@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 import "./services.css";
 
-import Cardboard from "./../../card/CardBoard";
+import Cardboard from "./../cards/CardBoard";
 import Categories from "./../../categories/categories";
 import CategoriesInfo from "./../../categoriesInfo/categoriesInfo";
 
@@ -33,10 +33,7 @@ class Services extends Component {
   }
 
   render() {
-    const categories = this
-      .props
-      .data
-      .map(category => ({name: category.name, info: category.info}));
+    // const categories = this.props.data.map(category => ({name: category.name, info: category.info}));
 
     return (
       <React.Fragment>

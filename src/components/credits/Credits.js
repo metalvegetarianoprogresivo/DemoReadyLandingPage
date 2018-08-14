@@ -1,18 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Credits.css';
-import DemoPage from '../demoPage/DemoPage';
 
-class Credits extends Component {
-    render() {
-        return(
+const credits = (props) => (
             <div>
                 <div className='center'>
                     <img src='https://i0.wp.com/www.sopitas.com/wp-content/uploads/2015/12/giphy17.gif' alt='credits' />
                 </div>
             </div>
+            
+        ); 
 
-        );
-    }
-}
-
-export default Credits;
+export default credits;
