@@ -5,7 +5,7 @@ import './CardBoard.css'
 
 const colNumber = 3;
 const m = 12 / colNumber;
-const s = 1;
+const s = 12;
 
  let createBoard = function(data) {
     var i = 0;
