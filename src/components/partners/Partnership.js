@@ -7,7 +7,7 @@ import cloudera from "./../../assets/images/logo_cloudera.jpg";
 import hortonworks from "./../../assets/images/logo_hortonworks.jpg";
 import mapr from "./../../assets/images/logo_mapr.jpg";
 
-import './partnership.css'
+import './Partnership.css'
 
 export default() => {
     const partners = [
