@@ -4,11 +4,13 @@ import "./categories.css";
 
 export default (props) => {
   return (
-    <div className="categories">
+    <div className="categories col s12 m6">
       {
         props.data.map(category => {
           return (
-          <div key={category.name} className="categories__single-category"
+          <div
+          key={category.name}
+          className="categories__single-category col s12 m4 center-align"
           onClick={()=> props.selectCategory(category.name)}>
             <img
             className="categories__image"
