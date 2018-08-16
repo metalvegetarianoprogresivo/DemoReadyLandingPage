@@ -1,20 +1,14 @@
-import React, { Component } from 'react';
-import HeaderDemo from '../../components/headerDemo/HeaderDemo'
+import React from 'react';
 import './VideoDemo.css';
 
-class VideoDemo extends Component {
-    constructor(props) {
-        super(props)
-    }
+const videoDemo = (props) => (
+  <div class="demo video-container">
+    <iframe
+      src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0"
+      title='Video Demo'
+      frameborder="0"
+      allowfullscreen></iframe>
+  </div>
+);
 
-    render() {
-        // TO-DO src should be rendered from props
-        return [
-            <div class="video-container">
-                <iframe src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-        ]
-    }
-}
-
-export default VideoDemo;
+export default videoDemo;

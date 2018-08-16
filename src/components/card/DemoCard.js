@@ -1,19 +1,15 @@
-import React, { Component } from 'react';
-import {Card, CardTitle} from 'react-materialize';
+import React from 'react';
+import { Card, CardTitle } from 'react-materialize';
 import './DemoCard.css'
 
-class DemoCard extends Component {
-    render() {
-        return(
-            <Card
-                header={<CardTitle image={this.props.image} ></CardTitle>} 
-                actions={[<a key={this.props.linkText} href={this.props.linkTo}>{this.props.linkText}</a>]}
-                title={this.props.title}
-                className='demo-card'>
-              <p className="left-align">{this.props.description}</p>
-            </Card>  
-        );
-    }
-}
+const demoCard = (props) => (
+  <Card
+    header={<CardTitle image={props.image} ></CardTitle>}
+    actions={[<a key={props.linkText} href={props.linkTo}>{props.linkText}</a>]}
+    title={props.title}
+    className='demo-card hoverable'
+    reveal={<p dangerouslySetInnerHTML={{ __html: props.description.replace(/\n/g, '<br/>') }}></p>}>
+  </Card>
+);
 
-export default DemoCard;
+export default demoCard;

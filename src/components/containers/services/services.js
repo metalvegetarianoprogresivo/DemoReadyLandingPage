@@ -2,9 +2,13 @@ import React, {Component} from 'react'
 
 import "./services.css";
 
-import Cardboard from "./../../card/CardBoard";
+import Cardboard from "./../cards/CardBoard";
 import Categories from "./../../categories/categories";
 import CategoriesInfo from "./../../categoriesInfo/categoriesInfo";
+
+import ResponsiveCategories from './../../responsiveCategories/responsiveCategories';
+
+import {Row, Container} from 'react-materialize';
 
 class Services extends Component {
 
@@ -13,8 +17,14 @@ class Services extends Component {
     this.state = {
       name: null,
       description: null,
-      cardboard: null
+      cardboard: null,
+      windowWidth: window.innerWidth
     }
+  }
+
+  handleResize = () => {
+    const windowWidth = window.innerWidth;
+    this.setState({windowWidth})
   }
 
   selectCategory = (text) => {
@@ -28,25 +38,42 @@ class Services extends Component {
 
   componentDidMount() {
     const {name, description, cardboard} = this.props.data[0];
-
     this.setState({name, description, cardboard})
+    this.handleResize();
+    window.addEventListener('resize', this.handleResize);
   }
 
-  render() {
-    const categories = this
-      .props
-      .data
-      .map(category => ({name: category.name, info: category.info}));
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
+  }
 
-    return (
-      <React.Fragment>
-        <div className="services">
-          <Categories data={this.props.data} selectCategory={this.selectCategory}/>
-          <CategoriesInfo description={this.state.description} name={this.state.name}/>
-        </div>
-        <Cardboard cardData={this.state.cardboard}/>
-      </React.Fragment>
-    )
+  compo
+
+  render() {
+    let {windowWidth} = this.state;
+
+    if (windowWidth > 768) {
+      return (
+        <React.Fragment>
+          <div id='demos' className="services row">
+            <Categories data={this.props.data} selectCategory={this.selectCategory}/>
+            <CategoriesInfo description={this.state.description} name={this.state.name}/>
+          </div>
+          <Cardboard cardData={this.state.cardboard}/>
+        </React.Fragment>
+      )
+    } else {
+      return (
+        <Row>
+          <Container>
+            <ResponsiveCategories
+              data={this.props.data}
+              selectCategory={this.selectCategory}/>
+          </Container>
+        </Row>
+      )
+    }
+
   }
 }
 

@@ -32,9 +32,10 @@ export default() => {
         }
     ];
     return (
-        <div className="partners">
+        <div className="partners row">
             {partners.map(partner => (
-                <div>
+                <div key={partner.name}
+                className="partners__container col s6 m2 center-align">
                     <img className="partners__logo"
                     src={partner.img} alt={partner.name}/>
                 </div>

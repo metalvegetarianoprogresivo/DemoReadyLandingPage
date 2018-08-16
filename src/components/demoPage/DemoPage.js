@@ -1,22 +1,47 @@
 import React, { Component } from 'react';
 import HeaderDemo from '../../components/headerDemo/HeaderDemo'
-import VideoDemo from '../../components/VideoDemo/VideoDemo'
-import StudyCase from '../../components/StudyCase/StudyCase'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { getLocation,
+         getDemoById } from '../../../src/utils.js'
 
 import './DemoPage.css';
 
 class DemoPage extends Component {
+
+    getLocationKeywords = () => {
+        let locationKeywords = getLocation();
+
+        return locationKeywords
+    }
+    
+    constructor(props) {
+        super(props)
+
+        let dataLocation = this.getLocationKeywords()
+        let id = dataLocation[2]
+        let category = dataLocation[1]
+        let demoData = getDemoById(category, id)
+
+        this.state = {
+            credits : demoData.content.credits,
+            techStack : demoData.content.techStack,
+            demo : demoData.content.demo,
+            studyCase : demoData.content.studyCase,
+            id : demoData.id,
+            name : demoData.name
+        }
+
+        this.getLocationKeywords = this.getLocationKeywords.bind(this);
+    }
+
+    componentDidMount() {
+        
+    }
+
     render() {
-        // TO-DO src should be rendered from props
         return [
-            <div class="container">
+            <div>
                 <HeaderDemo></HeaderDemo>
-                <Switch>
-                    <Route exact path="/" component={VideoDemo} />
-                    <Route exact path="/case" component={StudyCase} />
-                    <Route exact path = "/demo" component = {VideoDemo} />
-                </Switch>
+                {this.props.children}
             </div>
         ]
     }
