@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import cx from 'classnames';
 import { Col, Icon } from 'react-materialize';
 import Sidenav from '../../components/sidenav/sidenav'
 import './Navbar.css'
@@ -12,22 +11,7 @@ class Navbar extends Component {
     this.state = {
         isMenuOpen : false
     }
-    // this.renderSideNav = this.renderSideNav.bind(this);
   }
-
-//   componentDidMount() {
-//     if (typeof $ !== 'undefined') {
-//       $('.button-collapse').sideNav(this.props.options);
-//     }
-//   }
-
-//   renderSideNav() {
-//     return (
-//       <ul id="nav-mobile" className="side-nav">
-//         {this.props.children}
-//       </ul>
-//     );
-//   }
 
   toggle = () => {
     this.setState({ isMenuOpen : !this.state.isMenuOpen })
@@ -35,12 +19,10 @@ class Navbar extends Component {
 
   render() {
     const { brand, className, fixed, left, right, href, ...other } = this.props;
-    console.log(className)
     delete other.options;
 
     let classes = {
       right: right
-     // 'hide-on-med-and-down': true
     };
 
     let brandClasses = {
