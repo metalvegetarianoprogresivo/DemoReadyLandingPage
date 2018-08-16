@@ -38,3 +38,7 @@
     margin: 1rem;
     padding-top: 5px;
   }
+
+.navbar_intersys ul {
+  margin-left: auto;
+}

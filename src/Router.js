@@ -1,20 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import DemoPage from './components/demoPage/DemoPage';
 import VideoDemo from './components/VideoDemo/VideoDemo';
-import HeaderDemo from './components/headerDemo/HeaderDemo';
 import StudyCase from './components/StudyCase/StudyCase';
 import Credits from './components/credits/Credits';
 import App from './App';
 import TechStack from './components/techStack/TechStack';
 
-class Router extends Component{
-  constructor(props) {
-    super(props)
-  }
-    render() {
-        return(
+const router = (props) =>(
           <BrowserRouter>
             <Switch>
               <Route exact path='/' component={App} />
@@ -27,7 +21,4 @@ class Router extends Component{
             </Switch>
           </BrowserRouter>
         );
-    }
-}
-
-export default Router;
+export default router;

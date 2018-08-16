@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Credits.css';
 import DemoPage from '../demoPage/DemoPage';
 import ConsultantCard from '../consultantCard/consultantCard'
 import Row from '../../../node_modules/react-materialize/lib/Row';
 
-class Credits extends Component {
-    render() {
-        return(
+
+const credits = (props) => (
             <div>
                 <div className='center'>
                     <Row>
@@ -15,9 +14,7 @@ class Credits extends Component {
                     </Row>
                 </div>
             </div>
+            
+        ); 
 
-        );
-    }
-}
-
-export default Credits;
+export default credits;
