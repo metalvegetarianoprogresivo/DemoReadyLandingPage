@@ -2,13 +2,7 @@ import React, { Component } from 'react';
 import { NavItem, Icon, Link, SideNavItem} from 'react-materialize'
 import './HeaderDemo.css';
 import logo from '../../assets/images/intersys-image.png';
-import { getDataIds , 
-    matchParamUrl, 
-    getCategories , 
-    getDemosByCategory, 
-    getDemoById,
-    getUrl,
-    getLocation } from '../../../src/utils.js'
+import { getUrl, getLocation } from '../../../src/utils.js'
 import Sidenav from '../../components/sidenav/sidenav'
 import Navbar from '../../components/navbar/Navbar'
 
@@ -32,8 +26,6 @@ class HeaderDemo extends Component {
 
         return path.join('/')
     }    
-
-    //
 
     render() {
         return [

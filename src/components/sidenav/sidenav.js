@@ -1,11 +1,31 @@
 import React, { Component } from 'react';
-import { SideNavItem } from 'react-materialize'
+import { SideNavItem, SideNav } from 'react-materialize'
 import './sidenav.css';
 import { createPortal } from 'react-dom'
 
+import { getCurrentCategory, getDemosByCategory } from '../../../src/utils.js' 
+
 class Sidenav extends Component {
+    constructor(props) {
+        super(props)
 
+    }
+    
+    createSidenavItems = () => {
+        let category = getCurrentCategory()
+        let demos = getDemosByCategory(category)
+        let categories = []
 
+        for (let i = 0 ; i < demos[0].length; i++) {
+            categories.push(demos[0][i].name)
+        }
+
+        const listItems = categories.map((category) =>
+            <SideNavItem>{category}</SideNavItem>
+        );
+        
+        return listItems
+    }
 
     render() {
         let content = (
@@ -14,10 +34,7 @@ class Sidenav extends Component {
                 <ul className={`sidenav`}>
                     <SideNavItem href='#' header className='sidenav-header'>Categories</SideNavItem>
                     <SideNavItem divider />
-                    <SideNavItem href="">Demo 1</SideNavItem>
-                    <SideNavItem href="">Demo 2</SideNavItem>
-                    <SideNavItem href="">Demo 3</SideNavItem>
-                    <SideNavItem >Demo 4</SideNavItem>
+                    {this.createSidenavItems()}
                 </ul>
             </div>
 

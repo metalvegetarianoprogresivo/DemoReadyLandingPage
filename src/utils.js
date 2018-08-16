@@ -94,3 +94,9 @@ export const getDemoById = (category, id) => {
 
     return demoById
 }
+
+export const getCurrentCategory = () => {
+    let url = getLocation()
+
+    return url[1]
+}
