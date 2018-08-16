@@ -7,7 +7,7 @@ import cloudera from "./../../assets/images/logo_cloudera.jpg";
 import hortonworks from "./../../assets/images/logo_hortonworks.jpg";
 import mapr from "./../../assets/images/logo_mapr.jpg";
 
-import './Partnership.css'
+import './partnership.css'
 
 export default() => {
     const partners = [
@@ -32,9 +32,10 @@ export default() => {
         }
     ];
     return (
-        <div className="partners">
+        <div className="partners row">
             {partners.map(partner => (
-                <div key={partner.name}>
+                <div key={partner.name}
+                className="partners__container col s6 m2 center-align">
                     <img className="partners__logo"
                     src={partner.img} alt={partner.name}/>
                 </div>
