@@ -8,7 +8,12 @@
     opacity: 1; }
     .sidenavParent.open .sidenav {
       left: 0;
-      transition: left 0.35s ease-out; }
+      transition: left 0.35s ease-out;
+      font-size: 30px; }
+      .sidenavParent.open .sidenav li:not(.divider) {
+        padding: 20px; }
+        .sidenavParent.open .sidenav li:not(.divider) a {
+          color: #9e9e9e; }
     .sidenavParent.open .overlay {
       height: 100%;
       opacity: 1;
@@ -28,12 +33,13 @@
     display: flex;
     flex-direction: column; }
     .sidenavParent .sidenav li:not(.divider) {
-      padding: 15px;
       display: flex; }
       .sidenavParent .sidenav li:not(.divider):hover {
         background: rgba(0, 0, 0, 0.3);
         transition: background-color 0.35s ease-out;
         color: white; }
+    .sidenavParent .sidenav ul.sidenav {
+      font-size: 50px; }
   .sidenavParent .overlay {
     background: rgba(0, 0, 0, 0.25);
     height: 0;
