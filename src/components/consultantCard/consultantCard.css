@@ -1,0 +1,20 @@
+.horizontal .card-content div{
+    text-align: left;
+}
+
+.horizontal .card-content div h1{
+    font-size: 1.4em;
+}
+
+.horizontal .card-content div h2{
+    font-size: 1.1em;
+}
+
+.horizontal .card-action{
+    background-color: var(--light-blue);
+    
+}
+
+.horizontal .card-action a{
+    color: white !important;
+}

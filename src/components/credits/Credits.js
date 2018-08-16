@@ -1,10 +1,17 @@
 import React from 'react';
 import './Credits.css';
+import DemoPage from '../demoPage/DemoPage';
+import ConsultantCard from '../consultantCard/consultantCard'
+import Row from '../../../node_modules/react-materialize/lib/Row';
+
 
 const credits = (props) => (
             <div>
                 <div className='center'>
-                    <img src='https://i0.wp.com/www.sopitas.com/wp-content/uploads/2015/12/giphy17.gif' alt='credits' />
+                    <Row>
+                        <ConsultantCard ></ConsultantCard>
+                        <ConsultantCard></ConsultantCard>
+                    </Row>
                 </div>
             </div>
             
