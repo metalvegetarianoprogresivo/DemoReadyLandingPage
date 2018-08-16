@@ -1,4 +1,4 @@
-.video-container {
+.demo.video-container {
     position: relative;
     padding-bottom: 0 !important;
     height: 0;
@@ -7,7 +7,7 @@
     height: calc(100vh - 70px);
 }
 
-.video-container iframe{
+.demo.video-container iframe{
     position: absolute;
     top: 0;
     left: 0;
