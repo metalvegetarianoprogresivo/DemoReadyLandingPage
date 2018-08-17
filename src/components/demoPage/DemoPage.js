@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import HeaderDemo from '../../components/headerDemo/HeaderDemo'
-import { getDemosByCategory, 
-         getLocation,
-         getDemoById,
-         getUrl } from '../../../src/utils.js'
+import { getLocation,
+         getDemoById } from '../../../src/utils.js'
 
 import './DemoPage.css';
 
@@ -22,7 +20,6 @@ class DemoPage extends Component {
         let id = dataLocation[2]
         let category = dataLocation[1]
         let demoData = getDemoById(category, id)
-        let url = getUrl()
 
         this.state = {
             credits : demoData.content.credits,

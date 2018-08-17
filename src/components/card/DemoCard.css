@@ -1,13 +1,18 @@
 .demo-card {
-    background: #fff;
-    color: var(--grey);
-    text-transform: uppercase;
+  background: #fff;
+  color: var(--grey);
+}
+.card-action a {
+  color: var(--green) !important;
+  font-weight: bold;
 }
 
-.card-action {
-    color: #565a60;
+.demo-card .card-image img{
+  max-height: 100%;
+  height: 200px;
+  width: 100%; 
 }
 
-div.card-action {
-    color: #565a60; 
+.card-title {
+  height: 80px;
 }

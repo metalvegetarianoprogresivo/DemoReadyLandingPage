@@ -1,0 +1,29 @@
+footer{
+    margin-top: 40px;
+}
+
+footer.page-footer{
+    background-color: var(--light-green);
+}
+
+.footer-copyright{
+    text-align: center;
+}
+
+.footer-links li,
+.social-media li{
+    display: inline;
+    padding-right: 30px;
+}
+
+.social-media li{
+    font-size: 1.6em;   
+}
+
+.social-media{
+    text-align: right;
+}
+
+.social-media li a{
+    color: white;
+}

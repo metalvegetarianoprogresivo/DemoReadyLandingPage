@@ -1,13 +1,17 @@
 .partners {
-  display: grid;
+  /* display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 120px;
   justify-items: center;
-  align-items: center;
+  align-items: center; */
+}
+
+.partners__container{
+  min-height: 130px !important;
 }
 
 .partners__logo{
   padding:20px;
-  max-width: 90%;
+  max-width: 100%;
 }

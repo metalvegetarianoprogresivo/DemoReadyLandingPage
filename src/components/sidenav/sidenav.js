@@ -1,45 +1,47 @@
 import React, { Component } from 'react';
-import { SideNav, SideNavItem, Link, Button, Icon, Collapsible, CollapsibleItem } from 'react-materialize'
+import { SideNavItem, SideNav } from 'react-materialize'
 import './sidenav.css';
+import { createPortal } from 'react-dom'
+
+import { getCurrentCategory, getDemosByCategory } from '../../../src/utils.js' 
 
 class Sidenav extends Component {
+    constructor(props) {
+        super(props)
+
+    }
+    
+    createSidenavItems = () => {
+        let category = getCurrentCategory()
+        let demos = getDemosByCategory(category)
+        let categories = []
+
+        for (let i = 0 ; i < demos[0].length; i++) {
+            categories.push(demos[0][i].name)
+        }
+
+        const listItems = categories.map((category) =>
+            <SideNavItem>{category}</SideNavItem>
+        );
+        
+        return listItems
+    }
 
     render() {
-        return[
-            <div>
-                <SideNav
-                trigger={<Button><Icon>menu</Icon></Button>}
-                options={{ closeOnClick: true }}
-                >
-                <SideNavItem href='#' header className='sidenav-header'>Categories</SideNavItem>
-                <SideNavItem divider />
-                <Collapsible accordion>
-                    <CollapsibleItem header='Digital'>
-                        <SideNavItem>Demo1</SideNavItem>
-                        <SideNavItem>Demo2</SideNavItem>
-                        <SideNavItem>Demo3</SideNavItem>
-                    </CollapsibleItem>
-                    <CollapsibleItem header='Big Data'>
-                        <SideNavItem>Demo1</SideNavItem>
-                        <SideNavItem>Demo2</SideNavItem>
-                        <SideNavItem>Demo3</SideNavItem>
-                    </CollapsibleItem>
-                    <CollapsibleItem header='App Development'>
-                        <SideNavItem>Demo1</SideNavItem>
-                    </CollapsibleItem>
-                    <CollapsibleItem header='Test Automation'>
-                        <SideNavItem>Demo1</SideNavItem>
-                        <SideNavItem>Demo2</SideNavItem>
-                        <SideNavItem>Demo3</SideNavItem>
-                    </CollapsibleItem>
-                    <CollapsibleItem header='Skye Search'>
-                        <SideNavItem>Demo1</SideNavItem>
-                        <SideNavItem>Demo2</SideNavItem>
-                    </CollapsibleItem>
-                </Collapsible>
-                </SideNav>
+        let content = (
+            <div className={`sidenavParent ${this.props.isOpen ? 'open' : ''}`}>
+                <div className="overlay" onClick={e => this.props.toggle() }></div>
+                <ul className={`sidenav`}>
+                    <SideNavItem href='#' header className='sidenav-header'>Categories</SideNavItem>
+                    <SideNavItem divider />
+                    {this.createSidenavItems()}
+                </ul>
             </div>
-        ]
+
+        )
+
+
+        return createPortal(content, document.getElementsByTagName('body')[0])
     }
 }
 
