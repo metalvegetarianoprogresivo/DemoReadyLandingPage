@@ -4,6 +4,10 @@ import { getLocation,
          getDemoById } from '../../../src/utils.js'
 
 import './DemoPage.css';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import StudyCase from '../../components/StudyCase/StudyCase';
+import TechStack from '../../components/techStack/TechStack';
+
 
 class DemoPage extends Component {
 
@@ -33,17 +37,20 @@ class DemoPage extends Component {
         this.getLocationKeywords = this.getLocationKeywords.bind(this);
     }
 
-    componentDidMount() {
-        
-    }
-
     render() {
-        return [
-            <div>
+        return (
+            <div> 
                 <HeaderDemo></HeaderDemo>
-                {this.props.children}
+                {this.props.children} 
+                {/* <Switch> */}
+                <Route exact path='/demo-page/:category/:demoId/case' render={ props => (
+                    <StudyCase studyCase = {this.state.studyCase} />
+                )} />
+                {/* <Route path='/demo-page/:category/:demoId/tech' render={ props => {
+                    <TechStack techStack = {this.state.techStack} />
+                }} /> </Switch> */}
             </div>
-        ]
+        )
     }
 }
 

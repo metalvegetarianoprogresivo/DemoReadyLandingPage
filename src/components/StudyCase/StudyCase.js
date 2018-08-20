@@ -1,10 +1,18 @@
-import React from 'react';
 import { Parallax } from 'react-materialize';
 import './StudyCase.css';
+import React, { Component } from 'react';
 
-const studyCase = (props) =>(
-      <div>
-        <Parallax imageSrc="http://materializecss.com/images/parallax1.jpg" />
+
+class StudyCase extends Component {
+  constructor(props) {
+    super(props);
+
+  }
+
+    render() {
+      return (
+        <div>
+        <Parallax imageSrc={this.props.studyCase} />
         <div className="section white">
           <div className="row container">
             <h2 className="header">Study Case</h2>
@@ -12,6 +20,8 @@ const studyCase = (props) =>(
           </div>
         </div>
       </div>
-    );
+      )
+    }
+  }
 
-export default studyCase;
+export default StudyCase;

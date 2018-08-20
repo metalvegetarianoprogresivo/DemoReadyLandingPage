@@ -7,28 +7,28 @@
                 "id" : "storage-and-compute",
                 "name" : "Big Data Storage and Compute",
                 "content" : {
-                    "studyCase" : "",
-                    "demo" : "",
+                    "studyCase" : "https://i.redd.it/6i4irkw2nn711.jpg",
+                    "demo" : "//www.youtube.com/embed/Q8TXgCzxEnw?rel=0",
                     "credits" : "",
-                    "techStack" : ""
+                    "techStack" : "https://tech.foodora.com/wp-content/uploads/sites/11/2018/01/stack.png"
                 }    
             },
             {
                 "id" : "ingestion-services",
                 "name" : "Data Ingestion Services",
                 "content" : {
-                    "studyCase" : "",
-                    "demo" : "",
+                    "studyCase" : "http://materializecss.com/images/parallax1.jpg",
+                    "demo" : "//www.youtube.com/embed/Q8TXgCzxEnw?rel=0",
                     "credits" : "",
-                    "techStack" : ""
+                    "techStack" : "http://i.imgur.com/7xQZO24.jpg"
                 }    
             },
             {
                 "id" : "warehousing",
                 "name" : "Data Lake and Data Warehousing",
                 "content" : {
-                    "studyCase" : "",
-                    "demo" : "",
+                    "studyCase" : "https://i.redd.it/899pbxosobf11.jpg",
+                    "demo" : "//www.youtube.com/embed/Q8TXgCzxEnw?rel=0",
                     "credits" : "",
                     "techStack" : ""
                 }    
@@ -38,9 +38,9 @@
                 "name" : "Migration, Integration, and Virtualization",
                 "content" : {
                     "studyCase" : "",
-                    "demo" : "",
+                    "demo" : "//www.youtube.com/embed/Q8TXgCzxEnw?rel=0",
                     "credits" : "",
-                    "techStack" : ""
+                    "techStack" : "https://i.imgur.com/GPz7uSg.gifv"
                 }    
             },
             {
